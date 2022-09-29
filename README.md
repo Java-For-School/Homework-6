@@ -30,3 +30,22 @@ class Main {
 }
 ```
 ### Exercise 43:
+
+```java
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        double zela1, zela2, zela3;
+        Scanner scanner = new Scanner(System.in);
+        
+        zela1 = scanner.nextDouble();
+        zela2 = scanner.nextDouble();
+        zela3 = scanner.nextDouble();
+    
+        if (zela1 == zela2 && zela2 == zela3) System.out.println("All sides are equal");
+        else if ((zela1 == zela2 && zela2 != zela3) || (zela1 == zela3 && zela2 != zela3) || (zela2 == zela3 && zela2 != zela1)) System.out.println("Two sides are equal");
+        else System.out.println("Normal, disappointing triangle");
+    }
+}
+```
