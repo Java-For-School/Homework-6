@@ -10,14 +10,14 @@ class Main {
         int gcse, sat;
         Scanner scanner = new Scanner(System.in);
         
-        first = scanner.nextInt();
-        second = scanner.nextInt();
+        gcse = scanner.nextInt();
+        sat = scanner.nextInt();
         
-        if (gsce < 90 && sat < 600) {
+        if (gcse < 90 && sat < 600) {
             System.out.println("You're a failure");
             return;
         }
-        if (gsce < 90) {
+        if (gcse < 90) {
             System.out.println("Pump those gsce's up");    
             return;
         }
